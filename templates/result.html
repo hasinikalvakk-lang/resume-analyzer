@@ -1,0 +1,188 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="top-section">
+
+    <div class="sidebar">
+
+        <h1>
+            Resume Analysis Result
+        </h1>
+
+        <p>
+            Here is the professional summary
+            of your resume analysis.
+        </p>
+
+        <div class="tip-box">
+
+            <h3>
+                Pro Tip 🚀
+            </h3>
+
+            <p>
+                Add more relevant technical
+                skills and certifications
+                to improve ATS score.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="main-content">
+
+        <div class="header">
+
+            <h2>
+                Resume Analyzer
+            </h2>
+
+            <a href="/" class="analyze-btn">
+                Analyze Another
+            </a>
+
+        </div>
+
+        <div class="score-card">
+
+            <div class="circle">
+
+                <div class="inner-circle">
+
+                    <h1>
+                        {{ ats_score }}%
+                    </h1>
+
+                    <p>
+                        Good
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="summary">
+
+                <h3>
+                    Score Summary
+                </h3>
+
+                <ul>
+
+                    <li>
+                        ✅ Good skill matching
+                    </li>
+
+                    <li>
+                        ⚠ Add more advanced skills
+                    </li>
+
+                    <li>
+                        🚀 Improve project section
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>
+                    Detected Skills
+                </h3>
+
+                <div class="skills">
+
+                    {% for skill in skills %}
+
+                        <div class="skill green">
+                            {{ skill }}
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    Missing Skills
+                </h3>
+
+                <div class="skills">
+
+                    <div class="skill red">
+                        react
+                    </div>
+
+                    <div class="skill red">
+                        mongodb
+                    </div>
+
+                    <div class="skill red">
+                        aws
+                    </div>
+
+                    <div class="skill red">
+                        docker
+                    </div>
+
+                    <div class="skill red">
+                        kubernetes
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="resume-box">
+
+            <h3>
+                Extracted Resume Text
+            </h3>
+
+            <div class="resume-text">
+
+                {{ resume_text }}
+
+            </div>
+
+        </div>
+
+        <div class="bottom-box">
+
+            <div>
+
+                <h2>
+                    Keep Improving 🚀
+                </h2>
+
+                <p>
+                    Add more projects and
+                    technical skills to boost
+                    your profile.
+                </p>
+
+            </div>
+
+            <a href="/" class="bottom-btn">
+                Analyze Again
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

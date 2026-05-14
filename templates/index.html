@@ -1,0 +1,170 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="upload-page">
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-box">
+                📄
+            </div>
+
+            <h2>
+                Resume Analyzer
+            </h2>
+
+        </div>
+
+        <a href="#" class="nav-btn">
+            Analyze Resume
+        </a>
+
+    </nav>
+
+    <div class="hero-section">
+
+        <div class="tag">
+            ✨ Smart Resume Analysis
+        </div>
+
+        <h1>
+            Upload Your
+            <span>Resume</span>
+        </h1>
+
+        <p>
+            Get instant ATS score,
+            skill analysis and
+            improvement suggestions
+        </p>
+
+        <form
+            action="/analyze"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+
+            <div class="upload-box">
+
+                <div class="upload-icon">
+                    ☁️
+                </div>
+
+                <h3>
+                    Drag & Drop Your Resume
+                </h3>
+
+                <p>
+                    or
+                </p>
+
+                <label
+                    for="resume-upload"
+                    class="custom-file-upload"
+                >
+                    Choose File
+                </label>
+
+                <input
+                    id="resume-upload"
+                    type="file"
+                    name="resume"
+                    required
+                >
+
+                <small>
+                    Supports PDF files only
+                </small>
+
+            </div>
+
+            <button type="submit">
+
+                🚀 Analyze Resume
+
+            </button>
+
+        </form>
+
+        <div class="secure-text">
+
+            🔒 Your data is secure and never shared
+
+        </div>
+
+    </div>
+
+    <div class="features">
+
+        <div class="feature-card">
+
+            <div class="icon green">
+                🎯
+            </div>
+
+            <h3>
+                ATS Score
+            </h3>
+
+            <p>
+                Get accurate ATS compatibility score
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon blue">
+                ⚡
+            </div>
+
+            <h3>
+                Skill Analysis
+            </h3>
+
+            <p>
+                Identify skills you have and missing ones
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon orange">
+                📄
+            </div>
+
+            <h3>
+                Text Extraction
+            </h3>
+
+            <p>
+                Extract text from your resume automatically
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon purple">
+                📈
+            </div>
+
+            <h3>
+                Smart Suggestions
+            </h3>
+
+            <p>
+                Get AI-powered tips to improve your resume
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
