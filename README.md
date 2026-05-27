@@ -22,7 +22,7 @@ This is a modern Resume Analyzer Web Application built using Python and Flask.
 
 ## Live Demo
 
-Coming Soon{https://resume-analyzer-two-plum.vercel.app/}
+[click here](https://resume-analyzer-two-plum.vercel.app/)
 
 ## How to Run
 
